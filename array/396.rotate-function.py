@@ -13,6 +13,7 @@ class Solution:
         n = len(nums)
         sum_ = sum(nums)
         F = sum(i * nums[i] for i in range(n))
+
         res = F
         for i in range(1, n):
             F += sum_ - n * nums[n - i]
